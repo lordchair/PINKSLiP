@@ -37,19 +37,19 @@ a:hover {
 }
 
 .title {
-	font-size: 7vw;
-	letter-spacing: 5vw;
-	text-indent: 5vw;
+	font-size: 7vmin;
+	letter-spacing: 5vmin;
+	text-indent: 5vmin;
 }
 
 .back_slash {
 	position: fixed;
 	top: 0;
 	left: 0;
-	font-size: 5vw;
-	line-height: 4vw;
+	font-size: 5vmin;
+	line-height: 4vmin;
 	font-weight: bold;
-	padding: 3vw;
+	padding: 3vmin;
 	z-index: 5;
 }
 
@@ -57,21 +57,21 @@ a:hover {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	font-size: 3vw;
+	font-size: 3vmin;
 }
 
 .links_home {
 	flex-grow: 1;
-	font-size: 5vw;
+	font-size: 5vmin;
 }
 
 
 .link {
-	padding: 1vw;
+	padding: 1vmin;
 }
 
 .link.active {
-	font-size: 5vw;
+	font-size: 5vmin;
 }
 
 
@@ -84,8 +84,8 @@ a:hover {
 }
 
 .contact_item {
-	font-size: 5vw;
-	padding: 2vw;
+	font-size: 5vmin;
+	padding: 2vmin;
 }
 
 .about {
@@ -98,21 +98,21 @@ a:hover {
 
 .about_title {
 	font-size: 2rem;
-	padding-top: 5vw;
+	padding-top: 5vmin;
 }
 
 .people {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding-top: 5vw;
+	padding-top: 5vmin;
 }
 
 .person {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 5vw;
+	padding: 5vmin;
 	flex-grow: 1;
 	max-width: 30rem;
 }
