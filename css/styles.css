@@ -1,0 +1,133 @@
+body {
+	background-color: black;
+	color: white;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: rgb(200, 200, 200);
+}
+
+.flex-col {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-col_home {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.spacer {
+	flex-grow: 1;
+}
+
+.title {
+	font-size: 4rem;
+	letter-spacing: 3rem;
+	text-indent: 3rem;
+}
+
+.back_slash {
+	position: fixed;
+	top: 0;
+	left: 0;
+	font-size: 5rem;
+	line-height: 4rem;
+	font-weight: bold;
+	padding: 1rem;
+	z-index: 5;
+}
+
+.links {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 1rem;
+}
+
+.links_home {
+	flex-grow: 1;
+	font-size: 1.5rem;
+}
+
+
+.link {
+	padding: 2rem;
+}
+
+.link.active {
+	font-size: 2rem;
+}
+
+
+.contact_info {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact_item {
+	font-size: 2rem;
+	padding: 1rem;
+}
+
+.about {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.about_title {
+	font-size: 2rem;
+	padding-top: 3rem;
+}
+
+.people {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 4rem;
+}
+
+.person {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 3rem;
+	flex-grow: 1;
+	max-width: 30rem;
+}
+
+.name {
+	font-size: 2rem;
+}
+
+.bio {
+	padding: 2rem;
+}
+
+
+.work {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+}
