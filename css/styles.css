@@ -133,6 +133,7 @@ a:hover {
 .work {
 	flex-grow: 1;
 	display: flex;
+	min-height: 90vh;
 }
 
 .player_modal {
@@ -166,14 +167,12 @@ a:hover {
 .videos {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
+	justify-content: center;
+	align-content: center;
 	max-width: 100rem;
-	min-height: 90vh;
 }
 
 .video {
-	padding: 3vmin;
 }
 
 .video img {
