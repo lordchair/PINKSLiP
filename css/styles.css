@@ -70,6 +70,8 @@ a:hover {
 
 .link {
 	padding: 1vmin;
+	width: 20vmin;
+	text-align: center;
 }
 
 .link.active {
