@@ -1,3 +1,5 @@
+@import 'loader.css';
+
 body {
 	background-color: black;
 	color: white;
@@ -51,6 +53,7 @@ a:hover {
 	font-weight: bold;
 	padding: 3vmin;
 	z-index: 5;
+	cursor: pointer;
 }
 
 .links {
@@ -113,7 +116,7 @@ a:hover {
 	align-items: center;
 	padding: 5vmin;
 	flex-grow: 1;
-	max-width: 30rem;
+	max-width: 20rem;
 }
 
 .name {
@@ -121,12 +124,63 @@ a:hover {
 }
 
 .bio {
-	padding: 2rem;
+	padding: 2rem 0;
 }
 
 
 .work {
 	flex-grow: 1;
 	display: flex;
-	justify-content: center;
 }
+
+.player_modal {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.player_close {
+	position: fixed;
+	top: 0;
+	right: 0;
+	font-size: 5vmin;
+	line-height: 4vmin;
+	font-weight: bold;
+	padding: 3vmin;
+	z-index: 5;
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+.videos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 100rem;
+	min-height: 90vh;
+}
+
+.video {
+	padding: 3vmin;
+}
+
+.video img {
+	max-width: 100vw;
+}
+
+.loader {
+	margin-top: 45vh;
+}
+
+
+

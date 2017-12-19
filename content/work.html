@@ -10,15 +10,23 @@
 
   <link rel="stylesheet" href="../css/styles.css">
 
+  <script src="https://player.vimeo.com/api/player.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <script src="../js/scripts.js"></script>
+  <script src="../js/work.js"></script>
 
   <div class="back_slash"><a href='../index.html'>/</a></div>
+  <div class="player_modal hidden"></div>
+  <div class="player_close hidden" onClick="cleanup_player_modal()">X</div>
 
   <div class="flex-col">
 
@@ -31,9 +39,17 @@
     </div>
 
     <div class="work">
+      <div class="loader"></div>
     </div>
 
   </div>
+
+  <script>
+
+  init()
+    
+
+  </script>
   
 </body>
 </html>
