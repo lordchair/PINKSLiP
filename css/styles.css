@@ -7,6 +7,17 @@ body {
 	text-transform: uppercase;
 }
 
+.video-background {
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
 a {
 	text-decoration: none;
 	color: white;
@@ -44,6 +55,27 @@ a:hover {
 	text-indent: 5vmin;
 }
 
+.title .slash {
+	width: 2em;
+	height: 2em;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: -0.6em;
+}
+
+.slash {
+	display: inline;
+	font-weight: bold;
+	border-radius: 50%;
+	width: 2em;
+	height: 2em;
+	text-align: center;
+	line-height: 2em;
+	text-shadow: 5px 5px 5px black;
+	/*background-color: rgba(255, 255, 255, .1)*/
+}
+
 .back_slash {
 	position: fixed;
 	top: 0;
@@ -54,6 +86,8 @@ a:hover {
 	padding: 3vmin;
 	z-index: 5;
 	cursor: pointer;
+	width: 1em;
+	height: 1em;
 }
 
 .links {
@@ -76,6 +110,7 @@ a:hover {
 
 .link.active {
 	font-size: 5vmin;
+	pointer-events: none;
 }
 
 
@@ -153,12 +188,20 @@ a:hover {
 	top: 0;
 	right: 0;
 	font-size: 5vmin;
-	line-height: 4vmin;
-	font-weight: bold;
 	padding: 3vmin;
 	z-index: 5;
+	border-radius: 50%;
+	width: 1em;
+	height: 1em;
+	text-align: center;
+	line-height: 1em;
+	text-shadow: 5px 5px 5px black;
+}
+
+.pointer {
 	cursor: pointer;
 }
+
 
 .hidden {
 	display: none;
@@ -173,10 +216,41 @@ a:hover {
 }
 
 .video {
+	position: relative;
+	cursor: pointer;
 }
 
 .video img {
 	max-width: 100vw;
+}
+
+.video_info {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+	color: white;
+	transition: opacity 1s;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	pointer-events: none;
+}
+
+.video:hover .video_info {
+	transition: opacity 0s;
+	opacity: 1;
+}
+
+
+.video_title {
+	text-transform: none;
+	text-align: center;
+	padding: 1rem;
 }
 
 .loader {

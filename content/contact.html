@@ -10,23 +10,17 @@
 
   <link rel="stylesheet" href="../css/styles.css">
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="back_slash"><a href='../index.html'>/</a></div>
+  <script src="../js/common.js"></script>
 
   <div class="flex-col" style="height: 95vh">
 
-    <div class="links">
-      <a class="link" href="work.html">work</a>
-      /
-      <a class="link" href="about.html">about</a>
-      /
-      <a class="link active" href="contact.html">contact</a>
-    </div>
+    <div id="links_target"></div>
 
     <div class="contact_info">
         <a class="contact_item" href="mailto:pinkslipfilms@gmail.com?Subject=Website%20Contact" target="_top"> EMAIL: PINKSLIPFILMS@GMAIL.COM </a>
@@ -35,6 +29,12 @@
     </div>
 
   </div>
+
+  <div id="slash_target"></div>
+
+  <script>
+    insert_links('contact', "#links_target", "#slash_target")
+  </script>
   
 </body>
 </html>

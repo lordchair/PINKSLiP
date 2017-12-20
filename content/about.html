@@ -10,10 +10,6 @@
 
   <link rel="stylesheet" href="../css/styles.css">
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
@@ -21,19 +17,11 @@
 
 <body>
   <script src="../js/about.js"></script>
-
-
-  <div class="back_slash"><a href='../index.html'>/</a></div>
+  <script src="../js/common.js"></script>
 
   <div class="flex-col">
 
-    <div class="links">
-      <a class="link" href="work.html">Work</a>
-      /
-      <a class="link active" href="about.html">About</a>
-      /
-      <a class="link" href="contact.html">Contact</a>
-    </div>
+    <div id="links_target"></div>
 
     <div class="about">
       <div class="about_title">Directors</div>
@@ -41,12 +29,11 @@
 
   </div>
 
+  <div id="slash_target"></div>
+
   <script>
-
+    insert_links('about', "#links_target", "#slash_target")
     insert_peeps()
-    
-
   </script>
-  
 </body>
 </html>

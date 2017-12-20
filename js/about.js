@@ -43,7 +43,6 @@ function insert_peeps() {
 
   for (peep_idx in peeps) {
     let peep = peeps[peep_idx]
-    console.log(peep)
     let person = $('<div class="person"></div>')
     person.append($(`<div class="name">${peep.name}</div><div class="bio">${peep.bio}</div>`))
     let credits = $('<div class="credits"></div>')

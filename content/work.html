@@ -16,27 +16,16 @@
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
 </head>
 
 <body>
   <script src="../js/work.js"></script>
+  <script src="../js/common.js"></script>
 
-  <div class="back_slash"><a href='../index.html'>/</a></div>
-  <div class="player_modal hidden"></div>
-  <div class="player_close hidden" onClick="cleanup_player_modal()">X</div>
 
   <div class="flex-col">
 
-    <div class="links">
-      <a class="link active" href="work.html">work</a>
-      /
-      <a class="link" href="about.html">about</a>
-      /
-      <a class="link" href="contact.html">contact</a>
-    </div>
+    <div id="links_target"></div>
 
     <div class="work">
       <div class="loader"></div>
@@ -44,11 +33,14 @@
 
   </div>
 
+  <div id="slash_target"></div>
+  <div class="player_modal hidden"></div>
+  <div class="player_close hidden" onClick="cleanup_player_modal()"><div class="pointer">X</div></div>
+
+
   <script>
-
-  init()
-    
-
+    insert_links('work', "#links_target", "#slash_target")
+    load_vimeo_content()
   </script>
   
 </body>
